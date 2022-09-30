@@ -8,19 +8,42 @@
 import SwiftUI
 
 struct ContentView: View {
+    var agents: [Agent]
+    
+    init(agents: [Agent]) {
+        self.agents = agents
+    }
+    
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            List(agents) { agent in
+                NavigationLink {
+                    DetailedAgent(agent: agent)
+                } label: {
+                    Label {
+                        Text(agent.name)
+                            .padding(.leading)
+                    } icon: {
+                        Image(agent.name)
+                            .resizable()
+                            .frame(width: 50, height: 50)
+                    }
+                }
+            }
         }
-        .padding()
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        NavigationView {
+            ContentView(agents: [
+                Agent(name: "Brimstone",
+                      type: .controller,
+                      origin: "United States",
+                      abilities: ["Incendiary", "Stim Beacon", "Sky Smoke", "Orbital Strike"])
+            ]
+            )
+        }
     }
 }

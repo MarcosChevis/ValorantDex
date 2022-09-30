@@ -11,6 +11,9 @@
 		BAF6DDD128E65E8F0075B6C3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAF6DDD028E65E8F0075B6C3 /* ContentView.swift */; };
 		BAF6DDD328E65E910075B6C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAF6DDD228E65E910075B6C3 /* Assets.xcassets */; };
 		BAF6DDD628E65E910075B6C3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAF6DDD528E65E910075B6C3 /* Preview Assets.xcassets */; };
+		BAF6DDDD28E65F390075B6C3 /* Agent.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAF6DDDC28E65F390075B6C3 /* Agent.swift */; };
+		BAF6DDDF28E669BE0075B6C3 /* DetailedAgent.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAF6DDDE28E669BE0075B6C3 /* DetailedAgent.swift */; };
+		BAF6DDE128E670F80075B6C3 /* CircleImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAF6DDE028E670F80075B6C3 /* CircleImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +22,9 @@
 		BAF6DDD028E65E8F0075B6C3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		BAF6DDD228E65E910075B6C3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BAF6DDD528E65E910075B6C3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BAF6DDDC28E65F390075B6C3 /* Agent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Agent.swift; sourceTree = "<group>"; };
+		BAF6DDDE28E669BE0075B6C3 /* DetailedAgent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedAgent.swift; sourceTree = "<group>"; };
+		BAF6DDE028E670F80075B6C3 /* CircleImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +58,10 @@
 			isa = PBXGroup;
 			children = (
 				BAF6DDCE28E65E8F0075B6C3 /* ValorantDexApp.swift */,
+				BAF6DDDC28E65F390075B6C3 /* Agent.swift */,
+				BAF6DDE028E670F80075B6C3 /* CircleImageView.swift */,
 				BAF6DDD028E65E8F0075B6C3 /* ContentView.swift */,
+				BAF6DDDE28E669BE0075B6C3 /* DetailedAgent.swift */,
 				BAF6DDD228E65E910075B6C3 /* Assets.xcassets */,
 				BAF6DDD428E65E910075B6C3 /* Preview Content */,
 			);
@@ -137,7 +146,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BAF6DDDD28E65F390075B6C3 /* Agent.swift in Sources */,
+				BAF6DDDF28E669BE0075B6C3 /* DetailedAgent.swift in Sources */,
 				BAF6DDD128E65E8F0075B6C3 /* ContentView.swift in Sources */,
+				BAF6DDE128E670F80075B6C3 /* CircleImageView.swift in Sources */,
 				BAF6DDCF28E65E8F0075B6C3 /* ValorantDexApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

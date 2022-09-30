@@ -9,9 +9,29 @@ import SwiftUI
 
 @main
 struct ValorantDexApp: App {
+    
+    var agents: [Agent] = [
+        Agent(name: "Brimstone", type: .controller, origin: "United States", abilities: ["Incendiary",
+                                                                                         "Stim Beacon",
+                                                                                         "Sky Smoke",
+                                                                                         "Orbital Strike"]),
+        Agent(name: "Viper", type: .controller, origin: "United States", abilities: ["Snake Bite",
+                                                                                     "Poison Cloud",
+                                                                                     "Toxin Screen",
+                                                                                     "Viper's Pit"]),
+        Agent(name: "Omen", type: .controller, origin: "Unknown", abilities: ["Shrouded",
+                                                                              "Paranoia",
+                                                                              "Dark Cover",
+                                                                              "From the Shadows"])
+        
+    
+    ]
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationView {
+                ContentView(agents: agents)
+            }
         }
     }
 }
